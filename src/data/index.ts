@@ -117,17 +117,17 @@ export const portfolioData: PortfolioData = {
   activities: [
     {
       id: "act1",
-      image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80",
-      tags: ["Berita", "Nasional"],
+      image: "/gsa.jpg",
+      tags: [],
       title: "Adopsi AI untuk PBL dan Targetkan lulusan Bertalenta Global, 2 Mahasiswa Prodi TRPL Lulus Program Google Student Ambassador 2026",
       author: "satria",
       date: "18/02/2026",
-      link: "#"
+      link: "https://trpl.polinela.ac.id/adopsi-ai-untuk-pbl-dan-targetkan-lulusan-bertalenta-global-2-mahasiswa-prodi-trpl-lulus-program-google-student-ambassador-2026/"
     },
     {
       id: "act2",
       image: "https://images.unsplash.com/photo-1559136555-9ce7b5fda016?w=800&q=80",
-      tags: ["Workshop", "Edukasi"],
+      tags: [],
       title: "Pelatihan Literasi Digital untuk UMKM dan Pemuda Daerah",
       author: "melisa",
       date: "10/01/2026",
@@ -136,7 +136,7 @@ export const portfolioData: PortfolioData = {
     {
       id: "act3",
       image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80",
-      tags: ["Project", "Tech"],
+      tags: [],
       title: "Penerapan Machine Learning untuk Deteksi Depresi Dini",
       author: "admin",
       date: "05/11/2025",
@@ -145,7 +145,7 @@ export const portfolioData: PortfolioData = {
     {
       id: "act4",
       image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&q=80",
-      tags: ["Komunitas", "Mahasiswa"],
+      tags: [],
       title: "Kolaborasi Tim dalam Mengembangkan Produk Inovasi Mobile App",
       author: "satria",
       date: "12/08/2024",
