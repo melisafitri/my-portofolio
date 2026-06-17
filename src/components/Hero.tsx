@@ -1,7 +1,13 @@
-import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
+import { AnimatePresence, motion, useMotionValue, useSpring, useTransform } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { portfolioData } from "../data";
-import { Download, Mail } from "lucide-react";
+import { Download, Mail, ChevronDown } from "lucide-react";
+
+const CV_OPTIONS = [
+  { label: "Scrum Master / Project Manager", file: "/cv/CV-Melisa Fitri-Scrum Master project manajer.pdf" },
+  { label: "System Analyst", file: "/cv/CV-Melisa Fitri-System  analyst .pdf" },
+  { label: "Quality Assurance", file: "/cv/CV-Melisa Fitri-quality assurance.pdf" },
+];
 
 const ROLES = ["Scrum Master", "System Analyst", "QA Engineer"];
 
@@ -77,6 +83,57 @@ function TiltCard() {
   );
 }
 
+function CVDropdown() {
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClick = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    };
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, []);
+
+  return (
+    <div ref={ref} className="relative">
+      <button
+        onClick={() => setOpen(!open)}
+        className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-white/60 text-sm md:text-base font-medium rounded-full text-blue-700 bg-white/40 backdrop-blur-2xl hover:bg-white/50 hover:border-white/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all"
+      >
+        <Download className="w-4 h-4" />
+        Download CV
+        <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${open ? "rotate-180" : ""}`} />
+      </button>
+
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, y: -6, scale: 0.97 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -6, scale: 0.97 }}
+            transition={{ duration: 0.15 }}
+            className="absolute left-0 mt-2 w-72 rounded-2xl border border-white/50 bg-white/80 backdrop-blur-2xl shadow-[0_8px_30px_rgb(0,0,0,0.1)] overflow-hidden z-50"
+          >
+            {CV_OPTIONS.map(({ label, file }) => (
+              <a
+                key={file}
+                href={file}
+                download
+                onClick={() => setOpen(false)}
+                className="flex items-center gap-3 px-5 py-3.5 text-sm font-medium text-slate-700 hover:bg-blue-500/10 hover:text-blue-600 transition-colors"
+              >
+                <Download className="w-4 h-4 shrink-0 text-blue-400" />
+                {label}
+              </a>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+
 export function Hero() {
   const { name } = portfolioData.personalInfo;
 
@@ -110,14 +167,7 @@ export function Hero() {
               <Mail className="w-4 h-4 mr-2" />
               Contact Me
             </a>
-            <a
-              href="#"
-              onClick={(e) => { e.preventDefault(); alert("CV feature would prompt a download here."); }}
-              className="inline-flex items-center justify-center px-6 py-3 border border-white/60 text-sm md:text-base font-medium rounded-full text-blue-700 bg-white/40 backdrop-blur-2xl hover:bg-white/50 hover:border-white/80 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all"
-            >
-              <Download className="w-4 h-4 mr-2" />
-              Download CV
-            </a>
+            <CVDropdown />
           </div>
         </motion.div>
 
