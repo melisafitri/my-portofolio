@@ -73,7 +73,7 @@ export function Activities() {
                     key={`${activity.id}-${index}`}
                     whileHover={{ y: -5 }}
                     rounded="3xl"
-                    className="shrink-0 w-[300px] md:w-[400px] overflow-hidden flex flex-col"
+                    className="shrink-0 w-[75vw] max-w-[300px] md:w-[380px] overflow-hidden flex flex-col"
                   >
                     {/* Image */}
                     <div className="relative h-48 md:h-56 overflow-hidden">
