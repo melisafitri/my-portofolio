@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -20,6 +20,7 @@ export function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
+      setMobileMenuOpen(false);
 
       // Simple intersection logic for active navbar link
       const sections = navItems.map((item) => item.href.substring(1));
@@ -95,33 +96,39 @@ export function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Nav Menu */}
-      {mobileMenuOpen && (
-        <motion.div
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -10 }}
-          className="lg:hidden absolute top-full left-0 right-0 bg-white/30 backdrop-blur-3xl shadow-[0_15px_40px_-10px_rgba(0,0,0,0.1)] border-t border-white/50 py-4 px-6 flex flex-col gap-2 rounded-b-3xl"
-        >
-          {navItems.map((item) => {
-            const isActive = activeSection === item.href.substring(1);
-            return (
-              <a
-                key={item.name}
-                href={item.href}
-                className={`relative px-4 py-3 text-base font-bold font-display rounded-xl transition-colors ${
-                  isActive
-                    ? "text-blue-600 bg-blue-500/10 shadow-sm border border-blue-200/50 backdrop-blur-md"
-                    : "text-slate-600 hover:text-blue-600 hover:bg-blue-500/5"
-                }`}
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                {item.name}
-              </a>
-            );
-          })}
-        </motion.div>
-      )}
+      {/* Mobile Nav Menu — fullscreen overlay */}
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className="lg:hidden fixed inset-0 z-40 bg-white/70 backdrop-blur-2xl flex flex-col px-6 pt-28 pb-10 gap-2"
+          >
+            {navItems.map((item, i) => {
+              const isActive = activeSection === item.href.substring(1);
+              return (
+                <motion.a
+                  key={item.name}
+                  href={item.href}
+                  initial={{ opacity: 0, x: -16 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: i * 0.05 }}
+                  className={`px-5 py-4 text-lg font-bold rounded-2xl transition-colors ${
+                    isActive
+                      ? "text-blue-600 bg-blue-500/10 border border-blue-200/50"
+                      : "text-slate-700 hover:text-blue-600 hover:bg-blue-500/5"
+                  }`}
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {item.name}
+                </motion.a>
+              );
+            })}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 }
