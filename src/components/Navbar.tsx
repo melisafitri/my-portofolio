@@ -52,6 +52,7 @@ export function Navbar() {
           transition={{ duration: 0.2 }}
           style={{ position: "fixed", inset: 0, zIndex: 9999, background: "#ffffff" }}
           className="flex flex-col px-6 pb-10"
+          onClick={() => setMobileMenuOpen(false)}
         >
           {/* Header row */}
           <div className="flex items-center justify-between py-5 border-b border-slate-100 mb-4">
