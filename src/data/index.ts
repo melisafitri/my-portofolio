@@ -1,10 +1,13 @@
 import { PortfolioData } from '../types';
 
+// Email encoded to deter automated scrapers
+const _e = atob('bWVsaXNhZjU2OUBnbWFpbC5jb20=');
+
 export const portfolioData: PortfolioData = {
   personalInfo: {
     name: "Melisa Fitri",
     headline: "Scrum Master | System Analyst | QA",
-    email: "melisaf569@gmail.com",
+    email: _e,
     linkedin: "https://www.linkedin.com/in/melisa-fitri/",
     github: "https://github.com/melisafitri",
     about: "Mahasiswa Teknologi Rekayasa Perangkat Lunak semester 6 dengan pengalaman aktif sebagai Scrum Master di PT. MNC Digital Indonesia (RCTI+) dan Project Manager pada proyek akademik end-to-end. Terbiasa mengelola sprint planning, koordinasi tim lintas fungsi, serta memastikan deliverable sesuai target menggunakan Jira, Confluence, dan metodologi Agile. Didukung kemampuan analisis kebutuhan sistem dan komunikasi yang baik untuk menjembatani kebutuhan bisnis dan tim teknis."
