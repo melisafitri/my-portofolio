@@ -96,7 +96,7 @@ export function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Nav Menu — fullscreen overlay */}
+      {/* Mobile Nav Menu — fullscreen overlay above everything */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
@@ -104,8 +104,23 @@ export function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="lg:hidden fixed inset-0 z-40 bg-white/70 backdrop-blur-2xl flex flex-col px-6 pt-28 pb-10 gap-2"
+            className="lg:hidden fixed inset-0 z-[100] bg-white flex flex-col px-6 pb-10"
           >
+            {/* Header row inside overlay */}
+            <div className="flex items-center justify-between py-5 border-b border-slate-100 mb-4">
+              <a href="#" className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-200/60">
+                <span className="text-blue-600 text-lg leading-none mt-[-2px]">✦</span>
+                <span className="text-xs font-bold tracking-widest text-blue-600 uppercase">Portfolio</span>
+              </a>
+              <button
+                onClick={() => setMobileMenuOpen(false)}
+                className="p-2 text-slate-700"
+                aria-label="Close menu"
+              >
+                <X size={24} />
+              </button>
+            </div>
+
             {navItems.map((item, i) => {
               const isActive = activeSection === item.href.substring(1);
               return (
@@ -114,11 +129,11 @@ export function Navbar() {
                   href={item.href}
                   initial={{ opacity: 0, x: -16 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: i * 0.05 }}
+                  transition={{ delay: i * 0.04 }}
                   className={`px-5 py-4 text-lg font-bold rounded-2xl transition-colors ${
                     isActive
                       ? "text-blue-600 bg-blue-500/10 border border-blue-200/50"
-                      : "text-slate-700 hover:text-blue-600 hover:bg-blue-500/5"
+                      : "text-slate-700 hover:text-blue-600 hover:bg-slate-50"
                   }`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
