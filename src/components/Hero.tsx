@@ -74,7 +74,7 @@ function TiltCard() {
         className="relative w-64 h-64 md:w-80 md:h-80 rounded-[2rem] overflow-hidden border-[6px] border-white/50 shadow-[0_20px_60px_rgb(0,0,0,0.12)] cursor-pointer"
       >
         <img
-          src="/photo.jpg"
+          src="/dokumentasi-kegiatan/photo.jpg"
           alt="Melisa Fitri"
           className="w-full h-full object-cover"
         />

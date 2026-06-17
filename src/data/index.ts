@@ -117,7 +117,7 @@ export const portfolioData: PortfolioData = {
   activities: [
     {
       id: "act1",
-      image: "/gsa.jpg",
+      image: "/dokumentasi-kegiatan/gsa.jpg",
       tags: [],
       title: "Google Student Ambassador class of 2025",
       date: "18/02/2026",
@@ -125,7 +125,7 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: "act2",
-      image: "/genvo.jpg",
+      image: "/dokumentasi-kegiatan/genvo.jpg",
       tags: [],
       title: "Mahasiswa TRPL Raih Silver Award – International Social Entrepreneurship Business Pitching Competition 2025 PMBS Malaysia",
       date: "10/01/2026",
@@ -133,7 +133,7 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: "act3",
-      image: "/tanisantri.jpg",
+      image: "/dokumentasi-kegiatan/tanisantri.jpg",
       tags: [],
       title: "Project Based Learning Perdana, Mahasiswa/i Prodi TRPL terlibat dalam Pengembangan Platform Pasar Lelang Kerja Sama dengan Bank Indonesia",
       date: "05/11/2025",
@@ -141,7 +141,7 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: "act4",
-      image: "/bimtek-BI.jpg",
+      image: "/dokumentasi-kegiatan/bimtek-BI.jpg",
       tags: [],
       title: "Prodi TRPL Polinela Gelar Sosialisasi dan Bimtek Platform Pasar Lelang Bank Indonesia bagi 3 Level User Penggunanya",
       date: "12/08/2024",
@@ -149,7 +149,7 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: "act5",
-      image: "/berdikari.jpg",
+      image: "/dokumentasi-kegiatan/berdikari.jpg",
       tags: [],
       title: "Menjadi salah satu mahasiswa yang ikut serta dalam program berdikari riset dosen TRPL Polinela",
       date: "12/08/2024",
@@ -157,7 +157,7 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: "act6",
-      image: "/bimtek-dinas-pertanian.jpg",
+      image: "/dokumentasi-kegiatan/bimtek-dinas-pertanian.jpg",
       tags: [],
       title: "Mahasiswa/i Prodi TRPL Polinela jadi Pendamping Digitalisasi Penyuluh Pertanian Provinsi Lampung dalam Bimtek Digitalisasi Pertanian Dinas Pertanian Provinsi Lampung",
       date: "12/08/2024",
@@ -165,7 +165,7 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: "act7",
-      image: "/capasity-building.jpeg",
+      image: "/dokumentasi-kegiatan/capasity-building.jpeg",
       tags: [],
       title: "Terlibat dalam Capacity Building di Bidang Digitalisasi Pertanian untuk Pendamping Penyuluh Pertanian Provinsi Lampung",
       date: "12/08/2024",
@@ -173,7 +173,7 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: "act8",
-      image: "/aitech.jpg",
+      image: "/dokumentasi-kegiatan/aitech.jpg",
       tags: [],
       title: "Menjadi salah satu Liaison Officer AITECH VI 2024 di Polinela",
       date: "23-26/10/2024",
@@ -181,7 +181,7 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: "act9",
-      image: "/pkkmb25.jpg",
+      image: "/dokumentasi-kegiatan/pkkmb25.jpg",
       tags: [],
       title: "Menjadi Panitia PKKMB 2025 sebagai Tim IT Pengelola Sistem Presensi Digital",
       date: "12/08/2024",
@@ -189,7 +189,7 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: "act9",
-      image: "/pkkmb24.jpeg",
+      image: "/dokumentasi-kegiatan/pkkmb24.jpeg",
       tags: [],
       title: "Peluncuran Aplikasi Presensi Berbasis Mobile dan Web hasil PBL Prodi TRPL pada PKKMB 2024",
       date: "12/08/2024",
