@@ -119,37 +119,81 @@ export const portfolioData: PortfolioData = {
       id: "act1",
       image: "/gsa.jpg",
       tags: [],
-      title: "Adopsi AI untuk PBL dan Targetkan lulusan Bertalenta Global, 2 Mahasiswa Prodi TRPL Lulus Program Google Student Ambassador 2026",
-      author: "satria",
+      title: "Google Student Ambassador class of 2025",
       date: "18/02/2026",
       link: "https://trpl.polinela.ac.id/adopsi-ai-untuk-pbl-dan-targetkan-lulusan-bertalenta-global-2-mahasiswa-prodi-trpl-lulus-program-google-student-ambassador-2026/"
     },
     {
       id: "act2",
-      image: "https://images.unsplash.com/photo-1559136555-9ce7b5fda016?w=800&q=80",
+      image: "/genvo.jpg",
       tags: [],
-      title: "Pelatihan Literasi Digital untuk UMKM dan Pemuda Daerah",
-      author: "melisa",
+      title: "Mahasiswa TRPL Raih Silver Award – International Social Entrepreneurship Business Pitching Competition 2025 PMBS Malaysia",
       date: "10/01/2026",
-      link: "#"
+      link: "https://trpl.polinela.ac.id/mahasiswa-trpl-raih-silver-award-international-social-entrepreneurship-business-pitching-competition-2025-pmbs-malaysia/"
     },
     {
       id: "act3",
-      image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80",
+      image: "/tanisantri.jpg",
       tags: [],
-      title: "Penerapan Machine Learning untuk Deteksi Depresi Dini",
-      author: "admin",
+      title: "Project Based Learning Perdana, Mahasiswa/i Prodi TRPL terlibat dalam Pengembangan Platform Pasar Lelang Kerja Sama dengan Bank Indonesia",
       date: "05/11/2025",
-      link: "#"
+      link: "https://trpl.polinela.ac.id/project-based-learning-perdana-mahasiswa-i-prodi-trpl-terlibat-dalam-pengembangan-platform-pasar-lelang-kerja-sama-dengan-bank-indonesia/"
     },
     {
       id: "act4",
-      image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&q=80",
+      image: "/bimtek-BI.jpg",
       tags: [],
-      title: "Kolaborasi Tim dalam Mengembangkan Produk Inovasi Mobile App",
-      author: "satria",
+      title: "Prodi TRPL Polinela Gelar Sosialisasi dan Bimtek Platform Pasar Lelang Bank Indonesia bagi 3 Level User Penggunanya",
       date: "12/08/2024",
-      link: "#"
+      link: "https://trpl.polinela.ac.id/prodi-trpl-polinela-gelar-sosialisasi-dan-bimtek-platform-pasar-lelang-bank-indonesia-bagi-3-level-user-penggunanya/"
+    },
+    {
+      id: "act5",
+      image: "/berdikari.jpg",
+      tags: [],
+      title: "Menjadi salah satu mahasiswa yang ikut serta dalam program berdikari riset dosen TRPL Polinela",
+      date: "12/08/2024",
+      link: "https://trpl.polinela.ac.id/hasil-riset-berdikari-dosen-prodi-trpl-polinela-di-pamerkan-pada-ajang-repertoar-kemendiktisaintek-2025/"
+    },
+    {
+      id: "act6",
+      image: "/bimtek-dinas-pertanian.jpg",
+      tags: [],
+      title: "Mahasiswa/i Prodi TRPL Polinela jadi Pendamping Digitalisasi Penyuluh Pertanian Provinsi Lampung dalam Bimtek Digitalisasi Pertanian Dinas Pertanian Provinsi Lampung",
+      date: "12/08/2024",
+      link: "https://trpl.polinela.ac.id/mahasiswa-i-prodi-trpl-polinela-jadi-pendamping-digitalisasi-penyuluh-pertanian-provinsi-lampung/"
+    },
+    {
+      id: "act7",
+      image: "/capasity-building.jpeg",
+      tags: [],
+      title: "Terlibat dalam Capacity Building di Bidang Digitalisasi Pertanian untuk Pendamping Penyuluh Pertanian Provinsi Lampung",
+      date: "12/08/2024",
+      link: "https://www.instagram.com/p/C00piRaJtDp/?igsh=MWlndnB4ZGJ4bDZ5OQ=="
+    },
+    {
+      id: "act8",
+      image: "/aitech.jpg",
+      tags: [],
+      title: "Menjadi salah satu Liaison Officer AITECH VI 2024 di Polinela",
+      date: "23-26/10/2024",
+      link: "https://polinela.ac.id/polinela-tuan-rumah-agricultural-innovation-technology-competition-aitec-vi/"
+    },
+    {
+      id: "act9",
+      image: "/pkkmb25.jpg",
+      tags: [],
+      title: "Menjadi Panitia PKKMB 2025 sebagai Tim IT Pengelola Sistem Presensi Digital",
+      date: "12/08/2024",
+      link: "https://www.instagram.com/stories/highlights/18058561397600977/"
+    },
+    {
+      id: "act9",
+      image: "/pkkmb24.jpeg",
+      tags: [],
+      title: "Peluncuran Aplikasi Presensi Berbasis Mobile dan Web hasil PBL Prodi TRPL pada PKKMB 2024",
+      date: "12/08/2024",
+      link: "https://www.instagram.com/stories/highlights/18058561397600977/"
     }
   ]
 };

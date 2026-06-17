@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Calendar } from "lucide-react";
 import { portfolioData } from "../data";
 import { useEffect, useRef, useState } from "react";
 import { GlassCard } from "./ui/GlassCard";
@@ -86,9 +86,13 @@ export function Activities() {
 
                     {/* Content */}
                     <div className="p-6 md:p-8 flex flex-col flex-grow">
-                      <h3 className="text-lg md:text-xl font-bold text-slate-900 leading-snug mb-6 line-clamp-3">
+                      <h3 className="text-lg md:text-xl font-bold text-slate-900 leading-snug mb-3 line-clamp-3">
                         {activity.title}
                       </h3>
+                      <div className="flex items-center gap-1.5 text-xs text-slate-400 mb-4">
+                        <Calendar className="w-3.5 h-3.5" />
+                        {activity.date}
+                      </div>
                       <div className="mt-auto">
                         <a
                           href={activity.link}

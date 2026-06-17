@@ -32,7 +32,6 @@ export interface Activity {
   image: string;
   tags: string[];
   title: string;
-  author: string;
   date: string;
   link: string;
 }
