@@ -53,7 +53,8 @@ export function Navbar() {
         <a href="#" className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-200/60 backdrop-blur-md">
           <span className="text-blue-600 text-lg leading-none mt-[-2px]">✦</span>
           <span className="text-xs font-bold tracking-widest text-blue-600 uppercase font-display">
-            Welcome to my portfolio
+            <span className="hidden sm:inline">Welcome to my portfolio</span>
+            <span className="sm:hidden">Portfolio</span>
           </span>
         </a>
 

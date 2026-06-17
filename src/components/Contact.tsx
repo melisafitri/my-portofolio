@@ -12,7 +12,7 @@ const socials = [
 
 export function Contact() {
   return (
-    <section id="contact" className="py-32 px-6 md:px-12 relative overflow-hidden">
+    <section id="contact" className="py-16 md:py-32 px-6 md:px-12 relative overflow-hidden">
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-blue-200 to-transparent opacity-50" />
 
       <div className="max-w-4xl mx-auto text-center relative z-10">

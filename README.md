@@ -66,13 +66,12 @@ Tambah kegiatan (More Information) baru:
 ```ts
 activities: [
   {
-    id: "act5",
-    image: "https://...",
-    tags: ["Kategori"],
+    id: "act10",
+    image: "/nama-foto.jpg",
+    tags: [],
     title: "Judul Kegiatan",
-    author: "melisa",
     date: "01/06/2026",
-    link: "#"
+    link: "https://..."
   }
 ]
 ```
