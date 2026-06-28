@@ -12,7 +12,7 @@ Portfolio website pribadi Melisa Fitri, mahasiswa Teknologi Rekayasa Perangkat L
 
 ## Fitur
 
-- Sticky stacking card effect pada section Experience (seperti Road2Work)
+- Sticky stacking card effect pada section Experience 
 - Glassmorphism design system yang konsisten di semua section
 - Auto-scroll carousel pada section More Information
 - Fully responsive (mobile & desktop)
